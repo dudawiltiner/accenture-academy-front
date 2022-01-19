@@ -8,9 +8,9 @@ class ButtonOperator extends Component {
   }
   render() {
     const {funcOperator, funcReset} = this.props;
-    
+
     return(
-      <div>
+      <div className="button-Operato">
         <button onClick={() => funcOperator('+')}>+</button>
         <button onClick={() => funcOperator('-')}>-</button>
         <button onClick={() => funcOperator('*')}>*</button>
