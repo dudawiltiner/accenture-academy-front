@@ -37,13 +37,18 @@ Após cada um dos passos a seguir, haverá um exemplo do comando a ser digitado 
   cd accenture-academy-front
 ```
 
-4. Instale todas as dependências, usando o CLI **npm**.
+4. Entre no diretório da aplicação que você deseja rodar e aplicar.
+```javascript
+  cd challenges/calculator
+```
+
+5. Instale todas as dependências, usando o CLI **npm**.
 ```javascript
   npm install
 ```
 ### Debug da aplicação
 
-5. Abra no ambiente de desenvolvimento de sua preferência. No caso de uso do VSC, digite o comando **code .** na raiz do diretório clonado.
+6. Abra no ambiente de desenvolvimento de sua preferência. No caso de uso do VSC, digite o comando **code .** na raiz do diretório clonado.
 ```javascript
   code .
 ```
