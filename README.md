@@ -21,12 +21,12 @@ Após cada um dos passos a seguir, haverá um exemplo do comando a ser digitado 
 
 1. Abra o terminal e crie um diretório no local de sua preferência com o comando **mkdir**:
 ```javascript
-  mkdir activites
+  mkdir activities
 ```
 
 2. Entre no diretório que acabou de criar e depois clone o projeto:
 ```javascript
-  cd activites
+  cd activities
   git clone https://github.com/dudawiltiner/accenture-academy-front.git
 ```
 
