@@ -45,7 +45,6 @@ class Calculator extends Component {
     }))
   }
 
-
   render() {
     const numbers = ['1','2','3','4','5','6','7','8','9', '0'];
     const { value } = this.state;
@@ -55,7 +54,6 @@ class Calculator extends Component {
         <div className="App">
           <img className="App-logo" alt="logo Accenture" src="./logo.svg"/>
         </div>
-       
 
         <div className="container">
           <p id="title">Accenture Calculator</p> 
