@@ -1,0 +1,38 @@
+
+.container {
+    margin: 50px auto;
+    width: 400px;
+    display: flex;
+}
+
+.formulario {
+    padding: 20px;
+}
+
+fieldset {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.input {
+    height: 30px;
+    width: 300px;
+}
+
+.label {
+    width: 200px;
+    color: #444;
+}
+
+.button-container {
+    display: flex;
+    flex: 1;
+
+}
+
+.button-container  button{
+    width: 100%;
+    height: 14px;
+    height: 30px;
+    background-color: seashell;
+ }
