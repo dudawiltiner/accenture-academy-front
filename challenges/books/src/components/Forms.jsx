@@ -1,8 +1,9 @@
 import React from 'react';
 
-export default function Forms({createBook, values}) {
+export default function Forms({createBook, save}) {
   return (
-    <form>
+    <form onSubmit={save}>
+      <label>Name</label>
       <input
         onChange={({target}) => createBook(
           (prevState) => ({...prevState, name: target.value})
@@ -10,6 +11,8 @@ export default function Forms({createBook, values}) {
         type="text"
         required
       />
+
+      <label>Author</label>
       <input
         onChange={({target}) => createBook(
           (prevState) => ({...prevState, auth: target.value})
@@ -17,6 +20,8 @@ export default function Forms({createBook, values}) {
         type="text"
         required
       />
+
+      <label>Date</label>
       <input
         onChange={({target}) => createBook(
           (prevState) => ({...prevState, date: target.value})
@@ -24,6 +29,8 @@ export default function Forms({createBook, values}) {
         type="date"
         required
       />
+
+      <button type="submit">Salvar</button>
     </form>
   );
 }

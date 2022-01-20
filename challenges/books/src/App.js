@@ -11,16 +11,17 @@ function App() {
     const newList = books.filter((item) => item !== removedBook)
     setBooks([...newList]);
   }
+
+  const saveBook = (e) => {
+    e.preventDefault()
+    setBooks([...books, book])
+  }
   
   return (
     <div className="App">
-      <Forms createBook={setBook} />
-   
-      <button 
-        onClick={() => setBooks([...books, book])}
-      >
-        Salvar
-      </button>
+      <p className="title">Accenture Books</p>
+
+      <Forms createBook={setBook} save={saveBook} />
 
       { books.length > 0 && <ListBooks remove={removeBook} listBooks={books} />}
     </div>
