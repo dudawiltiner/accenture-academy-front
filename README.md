@@ -1,6 +1,10 @@
 
 # Boas vindas ao repositório Accenture Academy Front-End
 
+<div align="center">
+  <img src="./images/academy.svg" margin="10px" width="700" alt="login"/>
+</div>
+
 ## Introdução
 
 Esse é um repositório reservado para o treinamento da Accenture na Academia de Front-End. Você pode acessar duas pastas: de exemplos, que são práticas realizadas durante as aulas e os desafios propostos pelos professores.
@@ -60,6 +64,6 @@ Após cada um dos passos a seguir, haverá um exemplo do comando a ser digitado 
 
 ## Link para alguns deploys:
 
-
+-[Accenture Calculator](https://dudawiltiner.github.io/accenture-calculator/)
 
 
