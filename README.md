@@ -2,7 +2,7 @@
 # Boas vindas ao repositório Accenture Academy Front-End
 
 <div align="center">
-  <img src="./images/academy.svg" margin="10px" width="700" alt="login"/>
+  <img src="./images/academy.svg" margin="10px" width="700" alt="logo"/>
 </div>
 
 ## Introdução
