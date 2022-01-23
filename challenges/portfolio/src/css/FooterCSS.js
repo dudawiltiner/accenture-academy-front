@@ -17,11 +17,12 @@ export const ButtonIcon = styled.a`
   margin: 20px;
   padding: 1.2em 1.2em;
   -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, all 0.4s ease;
 
   &:hover, &:focus {
     color: #fff;
     outline: 0;
+    transform: translateY(-4px);
     box-shadow: 0 0 40px 40px ${(props) => props.color} inset;
   }
 `;

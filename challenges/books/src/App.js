@@ -1,21 +1,10 @@
-import { useState } from 'react';
 import './css/App.css';
 import Forms from './components/Forms';
 import ListBooks from './components/ListBooks';
+import useApp from './hooks/useApp';
 
 function App() {
-  const [books, setBooks] = useState([]);
-  const [book, setBook] = useState({});
-
-  const removeBook = (removedBook) => {
-    const newList = books.filter((item) => item !== removedBook)
-    setBooks([...newList]);
-  }
-
-  const saveBook = (e) => {
-    e.preventDefault()
-    setBooks([...books, book])
-  }
+  const {setBook, saveBook, removeBook, books} = useApp()
   
   return (
     <div className="App">
