@@ -1,36 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from "react-router-dom";
+import React from 'react';
 import { Box, Figure, Number, Quanty, Subtitle } from '../css/AboutCSS';
 import * as S from '../css/DateilCSS';
-import { useNavigate } from 'react-router';
 import { GlobalStyle } from '../css/GlobalCSS';
 import { BoxRepos, MainRepos } from '../css/MainCSS';
-import { gitHubAPIRepository } from '../service/gitHubAPI';
+import useDetail from '../hooks/useDetail';
 
 export default function DetailRepo() {
-  const { name } = useParams();
-  const [repo, setRepo] = useState({});
-  const navigate = useNavigate();
+  const { repo, navigate } = useDetail();
 
-  useEffect(() => {
-    init();
-  }, []);
-
-
-  async function init() {
-    const res = await gitHubAPIRepository(name);
-    const newRepo = {
-      name: res.full_name,
-      acess: res.html_url,
-      visib: res.visibility,
-      language: res.language,
-      size: res.size,
-      clone: res.clone_url,
-      image: res.owner.avatar_url
-    }
-
-    setRepo(newRepo)
-  }
   return (
     <MainRepos>
         <GlobalStyle />

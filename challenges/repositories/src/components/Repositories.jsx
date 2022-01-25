@@ -1,22 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router';
+import React from 'react';
 import * as S from '../css/RepositoriesCSS';
-import gitHubAPIGeneral from '../service/gitHubAPI';
 import { CgDetailsMore } from 'react-icons/cg'
+import useRepositories from '../hooks/useRepositories';
 
 export default function Repositories() {
-  const [listRepo, setListRepo] = useState([]);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    init();
-  }, []);
-
-  async function init() {
-    const res = await gitHubAPIGeneral("/repos");
-    const newList = res.map((item) => ({name: item.name, url: item.html_url}));
-    setListRepo([...newList]);
-  }
+  const { navigate, listRepo } = useRepositories()
 
   return (
     <S.ListRepos>
