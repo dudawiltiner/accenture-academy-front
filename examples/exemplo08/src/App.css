@@ -1,0 +1,32 @@
+
+.app {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    padding: 20px;
+    min-width: 400px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.input {
+    padding: 5px 10px;
+    font-size: 18px;
+    color: #8888;
+    margin: 0px 10px;
+}
+
+button {
+    font-size: 24px;
+    min-width: 32px;
+    min-height: 32px;
+}

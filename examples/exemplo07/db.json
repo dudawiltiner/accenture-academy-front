@@ -1,0 +1,31 @@
+{
+    "user": [
+      {
+        "id": "1",
+        "name": "José Teste",
+        "email": "test@test.com",
+        "password": "123",
+        "phone": "999887766"
+      },
+      {
+        "id": "2",
+        "name": "José 2",
+        "email": "test@test.com",
+        "password": "123",
+        "phone": "999887766"
+      }
+    ],
+    "livros": [
+        {
+            "id": 1,
+            "name": "React",
+            "autor": "React Autor"
+        },
+        {
+            "id": 2,
+            "name": "HTML",
+            "autor": "HTML Autor"
+        }
+    ]
+  }
+  
